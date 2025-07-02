@@ -40,10 +40,20 @@
           "backgroundColor": "#ffffff"
         }
       ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ],
       "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "packagerOpts": {
+      "sourceExts": ["js", "jsx", "ts", "tsx"],
+      "enableSymlinks": false
     },
     "extra": {
       "router": {},
